@@ -1,0 +1,38 @@
+nav{
+    background-color: aqua;
+    padding: 10px;}
+ #navbar{
+    color: rgb(166, 193, 16);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ #navbar{
+    position: relative;
+  }
+  #navbar:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: rgb(255, 0, 0);
+    height: 1px;
+  }
+  #navbar:hover:after {
+    width: 100%;
+  }
+  
+  
+  #navbar:hover {
+    color: #fff;
+    z-index: 1;
+  }
+  #navbar:hover:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
+  }
